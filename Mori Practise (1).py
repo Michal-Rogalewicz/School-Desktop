@@ -7,14 +7,6 @@ def print_slow(string):
         sys.stdout.flush()
         time.sleep(0.1)
 
-print(r"""
- __  __   ___   ____   ___ 
-|  \/  | / _ \ |  _ \ |_ _|
-| |\/| || | | || |_) | | | 
-| |  | || |_| ||  _ <  | | 
-|_|  |_| \___/ |_| \_\|___|
-""")
-
 name = input("What is your name? ")
 
 while True:
@@ -28,9 +20,16 @@ while True:
 if age < 16:
     print_slow(name + " you aren't old enough to play this game")
 else:
-    print_slow("VERIFICATION COMPLETE\n")
+    print(r"""
+ __  __   ___   ____   ___ 
+|  \/  | / _ \ |  _ \ |_ _|
+| |\/| || | | || |_) | | | 
+| |  | || |_| ||  _ <  | | 
+|_|  |_| \___/ |_| \_\|___|
+""")
+
     print_slow("Welcome to Mori " + name + "\n")
-    print_slow("Let's Begin\n")
+    print("Let's Begin\n")
 
     print_slow(
             "You check the time and realise its late, you start to go back to your car, "
