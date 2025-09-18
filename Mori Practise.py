@@ -20,7 +20,7 @@ while True:
 if age < 16:
     print_slow(name + " you aren't old enough to play this game")
 else:
-    print(r"""
+    print(r""""
  __  __   ___   ____   ___ 
 |  \/  | / _ \ |  _ \ |_ _|
 | |\/| || | | || |_) | | | 
@@ -28,8 +28,8 @@ else:
 |_|  |_| \___/ |_| \_\|___|
 """)
 
-    print_slow("Welcome to Mori " + name + "\n")
-    print("Let's Begin\n")
+    print_slow("Welcome to Mori " + name )
+    print("Lets Begin")
 
     print_slow(
             "You check the time and realise its late, you start to go back to your car, "
