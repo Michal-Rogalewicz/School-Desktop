@@ -5,7 +5,7 @@ def print_slow(string):
     for letter in string:
         sys.stdout.write(letter)
         sys.stdout.flush()
-        time.sleep(0.1)
+        time.sleep(0.13)
 
 print(r"""
  __  __   ___   ____   ___ 
@@ -28,8 +28,8 @@ while True:
 if age < 16:
     print_slow(name + " you aren't old enough to play this game")
 else:
-    print_slow("VERIFICATION COMPLETE\n")
-    print_slow("Welcome to Mori " + name + "\n")
+    print("VERIFICATION COMPLETE\n\n")
+    print_slow("Welcome to Mori " + name + "\n\n")
     print_slow("Let's Begin\n")
 
     print_slow(
