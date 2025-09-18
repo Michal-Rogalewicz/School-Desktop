@@ -3,7 +3,7 @@ age = input("How old are you? ")
 if age >= str(16):
     print("Welcome to MORI", name)
 else:
-    print("You aren't old enough to play this game", name)
+    print("You aren't old enough to play this game",name)
     quit()
 
 print("Lets Begin\n")
@@ -15,7 +15,7 @@ def print_slow(string):
     for letter in string:
         sys.stdout.write(letter)
         sys.stdout.flush()
-        time.sleep(0.01)
+        time.sleep(0.9)
 
 print_slow(
     "You check the time and realise its late, you start to go back to your car, "
@@ -24,16 +24,18 @@ print_slow(
     "you've never been to. "
     "You are now lost in the darkness of the Mori Forest.")
 
+name = input("What is your name? ")
 print_slow(f"\n{name}, your choices now will effect if you make it back to your car.")
 
 print_slow("\n\nYou are lost in the forest with darkness surrounding,"
            "the silence of the Mori is engulfing you. You have a path to the left and to your right. ")
 
-start = input("\nDo you take the right or left path? ")
+start = input("\nDo you take the left or right path? ")
+
 if start == "left":
     print_slow("\nThe path continues going deeper into the Mori forest." 
-    "The path seems endless leading you only to a more shallow and dark place.")
-while True:
+     "The path seems endless leading you only to a more shallow and dark place.")
+while input == "left":
     path = input("\nDo you go back? (yes/no): ")
     if path == "yes":
         print_slow("\nYou return to the first two paths fatigued by the Mori Forest.")
@@ -43,3 +45,9 @@ while True:
         break
     else:
         print_slow("Invalid input. Please try again.")
+        break
+
+if start == "right":
+                       print_slow("\nThe Loud Silence of the Mori Forest makes you continue to be anxious,"
+                       "by each second going deeper into the Mori Forest. You hear a river nearby,"
+                       "the soothing sound of waves makes you at peace calming your nerves")
