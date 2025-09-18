@@ -49,7 +49,7 @@ while True:
         break
 
     elif start == "right":
-        print_slow("\nThe Loud Silence of the Mori Forest makes you continue to be anxious,"
+        print_slow("\nThe loud silence of the Mori Forest makes you continue to be anxious,"
                "by each second going deeper into the Mori Forest. You hear a river nearby,"
                "the soothing sound of waves makes you feel at peace calming your nerves.")
         print_slow("\nYou go towards the soothing sound of the river")
